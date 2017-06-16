@@ -70,7 +70,7 @@ class DataCiteRequest(object):
         request_func = getattr(requests, method.lower())
         kwargs = dict(
             auth=HTTPBasicAuth(self.username, self.password),
-            params=params,
+#            params=params,
             headers=headers,
         )
 
